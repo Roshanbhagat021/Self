@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .gradient-text {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+ @keyframes phoneRing {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(-8deg); }
+    40% { transform: rotate(8deg); }
+    60% { transform: rotate(-6deg); }
+    80% { transform: rotate(6deg); }
+  }
+
+  @keyframes Wiggle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+
+  .phone-animate {
+    animation: phoneRing 2s ease-in-out infinite;
+  }
+  .mail-animate {
+    animation: Wiggle 3s ease-in-out infinite;
+  }
+  .pin-animate {
+    animation: Wiggle 3s ease-in-out infinite;
+  }
+
+
