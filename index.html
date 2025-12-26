@@ -18,6 +18,21 @@
     <title>JANVI PG - Premium Accommodation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="animationScript.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RFRCXRPLDK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      console.log('window.dataLayer: ', window.dataLayer);
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RFRCXRPLDK");
+    </script>
     <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet" />
     <link
@@ -328,6 +343,7 @@
           <div class="relative animate-slide-up">
             <img
               src="assets/main.avif"
+              fetchpriority="high"
               alt="PG Building"
               class="rounded-2xl shadow-2xl"
             />
